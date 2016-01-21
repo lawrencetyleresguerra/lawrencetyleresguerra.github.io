@@ -1,25 +1,139 @@
 <!DOCTYPE html>
-<html>
-  <head>
-  <meta charset="utf­8">
-<title>Basic Bootstrap Template</title>
-<meta name="viewport" content="width=device­width, initial­scale=1">
-
-<link rel="stylesheet"
-href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-
-<!­­Optional Bootstrap theme ­­>
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-
-theme.min.css">
-
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bootstrap 3 Responsive Layout Example</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
-  <body>
-    <h1>Hello, universe!</h1>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
+<body>
+<div class="btn-group">
+        <button type="button" class="btn btn-primary">Home</button>
+        <button type="button" class="btn btn-primary">Pictures</button>
+        <button type="button" class="btn btn-primary">Videos</button>
+    </div>
+<div class="container">
+    <div class="jumbotron">
+        <h2>Basic One</h2>
+            <table class="table">
+    <thead>
+        <tr>
+            <th>Row</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Tyler</td>
+            <td>Esguerra</td>
+            <td>tyleresguerra@gmail.com</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Rob</td>
+            <td>Marchese</td>
+            <td>robbymarch@gmail.com</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Jenna</td>
+            <td>Basnett</td>
+            <td>jenbasnett@gmail.com</td>
+        </tr>
+    </tbody>
+</table>
+    </div>
+    <div class="row">
+        <div class="col-sm-6 col-md-4 col-lg-2 bg-warning">
+            <h2>Basic Two</h2>
+                <ul class="list-unstyled">
+        <li>Home</li>
+        <li>Products
+            <ul>
+                <li>Gadgets</li>
+                <li>Accessories</li>
+                <li>Clothing</li>
+                <li>Covers</li>
+            </ul>
+        </li>
+        <li>About Us</li>
+        <li>Contact</li>
+        <li>Other Stuff</li>
+        <li>Our Twitters</li>
+    </ul>
+        <ul class="list-group">
+            <li class="list-group-item">Pictures</li>
+            <li class="list-group-item">Documents</li>        
+            <li class="list-group-item">Music</li>
+            <li class="list-group-item">Videos</li>
+        </ul>
+            <p><a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank" class="btn btn-success">Learn More &raquo;</a></p>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 bg-primary">
+            <h2>Basic Three</h2>
+            <p>Mauris at dui neque. Donec erat libero, commodo non sagittis non, pharetra in lorem. Vivamus viverra non eros accumsan elementum. Aenean porttitor massa a quam sollicitudin, vehicula tincidunt enim faucibus. Fusce semper leo in nisi malesuada, ut lacinia velit bibendum. Phasellus consequat nunc in diam mollis, ut vestibulum metus vehicula. Ut tristique lectus risus. Nullam feugiat blandit enim vel iaculis. Praesent ultrices lacus nisl, a efficitur quam interdum quis. Ut tincidunt libero sapien, vel viverra urna tristique ut.</p>
+            <p><a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank" class="btn btn-success">Learn More &raquo;</a></p>
+        </div>
+        <div class="clearfix visible-sm-block"></div>
+        <div class="col-sm-6 col-md-4 col-lg-2 bg-danger">
+            <h2>Basic Four</h2>
+            <p>Praesent ultrices lacus nisl, a efficitur quam interdum quis. Ut tincidunt libero sapien, vel viverra urna tristique ut. Pellentesque semper ante elit, non ornare ipsum finibus porttitor. Etiam eget convallis diam. Vivamus condimentum mattis urna. Nunc ac suscipit dui. Sed at metus eget nunc laoreet dignissim. Quisque malesuada, lectus id bibendum venenatis, sem eros molestie turpis, sit amet pretium lacus velit eu dui. </p>
+            <p><a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank" class="btn btn-success">Learn More &raquo;</a></p>
+        </div>
+        <div class="clearfix visible-md-block"></div>
+        <div class="col-sm-6 col-md-4 col-lg-2 bg-info">
+            <h2>Basic Five</h2>
+            <p>Phasellus id lobortis ante, nec aliquam tortor. Fusce nulla metus, laoreet in tortor sed, mattis elementum augue. Nulla sit amet fringilla mauris. Cras vulputate urna sed odio efficitur ullamcorper. Mauris faucibus vulputate sapien, vestibulum rhoncus urna tincidunt ac. Proin quis venenatis eros. Etiam vel ipsum quis dolor tincidunt pulvinar. Nam venenatis luctus rutrum. Proin rhoncus risus ut lacus ultrices tincidunt eu eu sem. Vestibulum in nibh condimentum. </p>
+            <p><a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank" class="btn btn-success">Learn More &raquo;</a></p>
+        </div>
+        <div class="clearfix visible-sm-block"></div>
+        <div class="col-sm-6 col-md-4 col-lg-2 bg-success">
+            <h2>Basic Six</h2>
+            <p>Duis aliquam ligula mollis eros auctor, vel vehicula magna tincidunt. Donec ut scelerisque tortor. Maecenas eu faucibus ipsum, vel tristique purus. Etiam vitae sem in urna cursus tempor non egestas justo. Aenean ante nunc, vehicula sit amet laoreet sit amet, eleifend a diam. Curabitur lorem eros, pharetra non facilisis a, feugiat a nibh.</p>
+            <p><a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank" class="btn btn-success">Learn More &raquo;</a></p>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 bg-primary">
+            <h2>Basic Seven</h2>
+            <p>Sed vestibulum tincidunt lorem, non dapibus ante rhoncus eu. Pellentesque suscipit tempus ex, ut pretium metus sollicitudin eu. Nullam pellentesque semper lectus vitae interdum. Nunc et congue sapien. Donec convallis ultrices bibendum. Sed pellentesque ligula nibh, sed varius tellus tempor sed. Nunc in suscipit mauris. Sed commodo sagittis mauris nec.</p>
+            <p><a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank" class="btn btn-success">Learn More &raquo;</a></p>
+        </div>
+    </div>
+    <form>
+    <div class="row">
+        <div class="col-xs-4">
+            <div class="input-group">
+                <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                <input type="text" class="form-control" placeholder="Username">
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Amount">
+                <span class="input-group-addon">.00</span>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="input-group">
+                <span class="input-group-addon">$</span>
+                <input type="text" class="form-control" placeholder="US Dollar">
+                <span class="input-group-addon">.00</span>
+            </div>
+        </div>
+    </div>
+</form>
+    <hr>
+    <div class="row">
+        <div class="col-sm-12">
+            <footer>
+                <p>© Copyright 2013 Tyler Esguerra</p>
+            </footer>
+        </div>
+    </div>
+</div>
 </body>
-
-</html>
+</html>                                		
