@@ -1,1 +1,0 @@
-# lawrencetyleresguerra.github.io
