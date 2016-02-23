@@ -74,7 +74,7 @@ function getTriangle(){
             <div role="tabpanel" class="tab-pane" id="q2">
                 <div class="row">
                     <div class="col-md-12">
-                    <pre>
+                        <pre>
                     Let's count by Foo, Bar and Foobar! Anything divisable by 3 is Foo, anything divisable by 5 is Bar
                     and anything divisable by both is Foobar!
                     </pre>
@@ -92,7 +92,7 @@ function getTriangle(){
             <div role="tabpanel" class="tab-pane" id="q3">
                 <div class="row">
                     <div class="col-md-12">
-                    <pre>
+                        <pre>
                     Let's make a Chess Board!
                     </pre>
                     </div>
@@ -109,7 +109,7 @@ function getTriangle(){
             <div role="tabpanel" class="tab-pane" id="q4">
                 <div class="row">
                     <div class="col-md-12">
-                    <pre>
+                        <pre>
                     Let's count how many B's are in your word!
                     </pre>
                     </div>
@@ -144,8 +144,24 @@ function getTriangle(){
                 <div class="row">
                     <div class="col-md-12">
                         <pre>
-                    test
-                </pre>
+                        $(document).ready(function() {
+                        function range(start, end) {
+                    var arr = [];
+                    //arr.push(1);
+                //    arr.push(5);
+                    for(var start; start <= end; start++){
+                        arr.push(start);
+                    }
+                    
+                    return arr;
+                }
+                $("#q6Button").on("click", function() {
+                    //range(3,5);
+                    var rangeAnswer = range(2, 6);
+                    $("#q6result").html("Answer is: " + rangeAnswer.join())
+                });
+            });
+                        </pre>
                     </div>
                     <div class="col-md-12">
                         <!-- Button Div -->
@@ -232,6 +248,7 @@ function getTriangle(){
                 getTriangle();
             });
             // END QUESTION 1 START QUESTION 2
+
             function printFooBar() {
                 var print = ""
                 var number = "Number(1)"
@@ -255,6 +272,7 @@ function getTriangle(){
             });
 
             //END QUESTION 2 START QUESTION 3
+
             function chessBoard() {
                 var size = prompt("Please enter a Number");
                 var line = '';
@@ -303,6 +321,7 @@ function getTriangle(){
             });
 
             //END QUESTION 4 START QUESTION 5
+
             function countChar(cString, charMatch) {
                 var count = 0;
                 for (var i = 0; i < cString.length; i++) {
@@ -320,12 +339,29 @@ function getTriangle(){
                 var t = countChar(inputOne, inputTwo)
                 $("#q5result").html(t);
             });
-            
+
             //END QUESTION 5 START QUESTION 6
 
-            $("#q6Button").on("click", function() {
-                $("#q6result").html("Answer six!");
+            $(document).ready(function() {
+                function range(start, end) {
+                    var arr = [];
+                    //arr.push(1);
+                    //    arr.push(5);
+                    if (start<= end){
+                    for (var start; start <= end; start++) {
+                        arr.push(start);
+                    }
+                }
+                    return arr;
+                }
+                $("#q6Button").on("click", function() {
+                    //range(3,5);
+                    var rangeAnswer = range(2, 6);
+                    $("#q6result").html("Answer is: " + rangeAnswer.join())
+                });
             });
+            
+            // END QUESTION 6 START QUESTION 7
 
             $("#q7Button").on("click", function() {
                 $("#q7result").html("Answer seven!");
