@@ -177,7 +177,34 @@ function getTriangle(){
                 <div class="row">
                     <div class="col-md-12">
                         <pre>
-                    test
+                    function range(lowerLimit, upperLimit) {
+                var lowerLimit = parseInt(prompt("What number would you like to start with?"));
+                if (isNaN(lowerLimit)) {
+                    alert("That's not a number, please retry.");
+                    var lowerLimit = prompt("Please re-enter a number.");
+                }
+                var upperLimit = parseInt(prompt("What number would you like to end with?"));
+                if (isNaN(upperLimit)) {
+                    alert("That's not a number, please retry.");
+                    var upperLimit = prompt("Please re-enter a number.");
+                }
+
+                var sum = lowerLimit;
+                for (i = 1; i <= (upperLimit - lowerLimit); i++) {
+                    sum += (lowerLimit + i);
+                }
+
+                $("#q7result").html("Answer is: " + sum);
+                //ends function
+            }
+
+            $("#q7Button").on("click", function() {
+                range();
+
+
+
+                $("#q7result").html("Answer is: " + sum);
+            });
                 </pre>
                     </div>
                     <div class="col-md-12">
@@ -194,7 +221,30 @@ function getTriangle(){
                 <div class="row">
                     <div class="col-md-12">
                         <pre>
-                    test
+                    function reverseArray(valueA, valueB, valueC, valueD) {
+
+                var valueA = prompt("Enter your first character or number to be in your array?");
+
+                var valueB = prompt("Enter your second character or number to be in your array?");
+
+                var valueC = prompt("Enter your third character or number to be in your array?");
+
+                var valueD = prompt("Enter your fourth character or number to be in your array?");
+
+
+                var arr = [valueA, valueB, valueC, valueD];
+
+                var iarr = new Array(valueD, valueC, valueB, valueA);
+
+
+                $("#q8result").html("Original array: " + arr + "<br>" + "Reversed array: " + iarr);
+
+            }
+
+            $("#q8Button").on("click", function() {
+                reverseArray();
+
+            });
                 </pre>
                     </div>
                     <div class="col-md-12">
@@ -211,7 +261,50 @@ function getTriangle(){
                 <div class="row">
                     <div class="col-md-12">
                         <pre>
-                    test
+                    function swapArray(valueA, valueB, valueC, valueD){
+                    
+        var valueA = prompt("Enter your first character or number to be in your array?");
+                
+        var valueB = prompt("Enter your second character or number to be in your array?");
+                    
+        var valueC = prompt("Enter your third character or number to be in your array?");
+                   
+        var valueD = prompt("Enter your fourth character or number to be in your array?");
+        
+        var valueE = prompt("Enter your fifth character or number to be in your array?");
+                 
+                    
+                   var arr = [valueA, valueB, valueC, valueD, valueE];
+          
+                
+                    var sarr = [valueA, valueB, valueC, valueD, valueE]; 
+                   
+                    
+                    var temp; 
+                    temp = sarr[0]; 
+                    sarr[0] = sarr[4]; 
+                    sarr[4] = temp;  
+                    
+                     temp = sarr[1]; 
+                    sarr[1] = sarr[3]; 
+                sarr[3] = temp; 
+                    
+            
+                    
+               $("#q9-result").html("Original array: " + arr + "<br>" + "Swapped array: " + sarr);
+                   
+                  
+                        
+                
+          }
+                
+                
+
+                $("#q9-button").on("click", function () {
+                     swapArray();
+                    
+               
+                });
                 </pre>
                     </div>
                     <div class="col-md-12">
@@ -347,11 +440,11 @@ function getTriangle(){
                     var arr = [];
                     //arr.push(1);
                     //    arr.push(5);
-                    if (start<= end){
-                    for (var start; start <= end; start++) {
-                        arr.push(start);
+                    if (start <= end) {
+                        for (var start; start <= end; start++) {
+                            arr.push(start);
+                        }
                     }
-                }
                     return arr;
                 }
                 $("#q6Button").on("click", function() {
@@ -360,19 +453,102 @@ function getTriangle(){
                     $("#q6result").html("Answer is: " + rangeAnswer.join())
                 });
             });
-            
+
             // END QUESTION 6 START QUESTION 7
 
+            function range(lowerLimit, upperLimit) {
+                var lowerLimit = parseInt(prompt("What number would you like to start with?"));
+                if (isNaN(lowerLimit)) {
+                    alert("That's not a number, please retry.");
+                    var lowerLimit = prompt("Please re-enter a number.");
+                }
+                var upperLimit = parseInt(prompt("What number would you like to end with?"));
+                if (isNaN(upperLimit)) {
+                    alert("That's not a number, please retry.");
+                    var upperLimit = prompt("Please re-enter a number.");
+                }
+
+                var sum = lowerLimit;
+                for (i = 1; i <= (upperLimit - lowerLimit); i++) {
+                    sum += (lowerLimit + i);
+                }
+
+                $("#q7result").html("Answer is: " + sum);
+                //ends function
+            }
+
             $("#q7Button").on("click", function() {
-                $("#q7result").html("Answer seven!");
+                range();
+
+
+
+                $("#q7result").html("Answer is: " + sum);
             });
+
+            // END QUESTION 7 START QUESTION 8
+
+            function reverseArray(valueA, valueB, valueC, valueD) {
+
+                var valueA = prompt("Enter your first character or number to be in your array?");
+
+                var valueB = prompt("Enter your second character or number to be in your array?");
+
+                var valueC = prompt("Enter your third character or number to be in your array?");
+
+                var valueD = prompt("Enter your fourth character or number to be in your array?");
+
+
+                var arr = [valueA, valueB, valueC, valueD];
+
+                var iarr = new Array(valueD, valueC, valueB, valueA);
+
+
+                $("#q8result").html("Original array: " + arr + "<br>" + "Reversed array: " + iarr);
+
+            }
 
             $("#q8Button").on("click", function() {
-                $("#q8result").html("Answer eight!");
+                reverseArray();
+
             });
 
+            // END QUESTION 8 START QUESTION 9
+
+            function swapArray(valueA, valueB, valueC, valueD) {
+
+                var valueA = prompt("Enter your first character or number to be in your array?");
+
+                var valueB = prompt("Enter your second character or number to be in your array?");
+
+                var valueC = prompt("Enter your third character or number to be in your array?");
+
+                var valueD = prompt("Enter your fourth character or number to be in your array?");
+
+                var valueE = prompt("Enter your fifth character or number to be in your array?");
+
+
+                var arr = [valueA, valueB, valueC, valueD, valueE];
+
+                var sarr = [valueA, valueB, valueC, valueD, valueE];
+
+                var temp; //variable to store a given value
+                temp = sarr[0]; // store valueA in temp variable
+                sarr[0] = sarr[4]; // valueA takes the value of valueE
+                sarr[4] = temp; //valueE takes the value of temp, which is the stored value of valueA
+                //valueA and valueE have been swapped
+
+                temp = sarr[1]; //valueB is stored in temp variable
+                sarr[1] = sarr[3]; //valueB takes the value of valueD
+                sarr[3] = temp; //valueD takes the new value of temp, which is the stored value of valueB
+                //valueB and valueD have been swapped
+
+                //valueC is uneffected because it is the middle value in the array
+
+                $("#q9result").html("Original array: " + arr + "<br>" + "Swapped array: " + sarr);
+                }
             $("#q9Button").on("click", function() {
-                $("#q9result").html("Answer nine!");
+                swapArray();
+
             });
         });
     </script>
