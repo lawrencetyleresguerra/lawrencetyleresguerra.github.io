@@ -3,6 +3,7 @@ $("#getClients").on("click", function(){
         
         alert(data);
         console.dir(data);
+    
     });
     
 })
