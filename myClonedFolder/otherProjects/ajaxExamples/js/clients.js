@@ -1,1 +1,5 @@
-alert("It works!")
+$("#getClients").on("click", function(){
+    
+    alert("It works!")
+})
+
