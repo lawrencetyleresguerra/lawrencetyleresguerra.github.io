@@ -10,7 +10,7 @@ $(document).ready(function() {
                 '<div class="clothingName">' + item.name + '</div>' +
                 '<div class="clothingColor">' + item.color + '</div>' +
                 '<img class="clothingImage" src="' + item.image + '"/>' +
-                '<div class="panel panel-default">'; //added
+                '<div class="panel panel-default">' + //added
                 '<div class="panel-heading">Buyer Reviews</div>'; //added
             $.each(item.comments, function(ind, i) {
                 html += '<div class="panel-body">' + //added
