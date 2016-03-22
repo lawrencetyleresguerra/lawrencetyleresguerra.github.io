@@ -5,7 +5,7 @@ $(document).ready(function() {
         var html = "";
 
         $.each(data, function(index, item) {
-            html += '<div class="col-md-4" clothing>' +
+            html += '<div class="col-md-4">' +
                 '<div class="clothingType">' + item.type + '</div>' +
                 '<div class="clothingName">' + item.name + '</div>' +
                 '<div class="clothingColor">' + item.color + '</div>' +
