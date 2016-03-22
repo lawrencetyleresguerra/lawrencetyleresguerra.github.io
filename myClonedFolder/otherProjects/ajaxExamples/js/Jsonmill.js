@@ -15,9 +15,12 @@ $(document).ready(function() {
                 html += '<div class="buyerName">' + i.username + '</div>' +
                     '<div class="buyerComment">' + i.comment + '</div>' +
                     '<div class="buyerStars">';
+                
                     var numStars = Number(i.stars);
+                
                 for (var i = 1; i <= 5; i++) {
-                    if (i <= i.stars) {
+                    
+                    if (i <= numStars) {
                             html+='<img src="http://lawrencetyleresguerra.github.io/myClonedFolder/images/fullstar.png">';
                     } else {
                            html+='<img src="http://lawrencetyleresguerra.github.io/myClonedFolder/images/emptystar.png">'; 
