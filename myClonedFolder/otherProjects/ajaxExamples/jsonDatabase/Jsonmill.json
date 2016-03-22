@@ -2,7 +2,7 @@
     "type": "Hoodie",
     "name": "20XX",
     "color": "Black/Gold",
-    "image": "images/hoodie.jpg",
+    "image": "http://lawrencetyleresguerra.github.io/myClonedFolder/images/hoodie.jpg",
     "comments": [{
         "username": "simplydaphered",
         "stars": 5,
@@ -20,7 +20,7 @@
     "type": "T-Shirt",
     "name": "Youth Movement",
     "color": "Red",
-    "image": "images/tshirt.jpg",
+    "image": "http://lawrencetyleresguerra.github.io/myClonedFolder/images/tshirt.jpg",
     "comments": [{
         "username": "Doublelift",
         "stars": 4,
@@ -38,7 +38,7 @@
     "type": "Crewneck",
     "name": "Winter's Bite",
     "color": "Light Blue/White",
-    "image": "images/crewneck.jpg",
+    "image": "http://lawrencetyleresguerra.github.io/myClonedFolder/images/crewneck.jpg",
     "comments": [{
         "username": "KingJames",
         "stars": 3,
