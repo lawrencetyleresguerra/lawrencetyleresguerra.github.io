@@ -28,7 +28,7 @@ $(document).ready(function() {
                         html += '<img src="http://lawrencetyleresguerra.github.io/myClonedFolder/images/emptystar.png">';
                     }
                 }
-                html += '</div>'; //end stars
+                html += '</div></div>'; //end stars
             }) //each comment
 
             html += '</div>' + //commentsContainer
