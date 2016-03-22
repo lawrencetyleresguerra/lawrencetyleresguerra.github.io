@@ -10,7 +10,8 @@ $(document).ready(function() {
                 '<div class="clothingName">' + item.name + '</div>' +
                 '<div class="clothingColor">' + item.color + '</div>' +
                 '<img class="clothingImage" src="' + item.image + '"/>' +
-                '<div class="commentsContainer">';
+                '<div class="panel panel-default">'; //added
+                '<div class="panel-heading">Buyer Reviews</div>'; //added
             $.each(item.comments, function(ind, i) {
                 html += '<div class="buyerName">' + i.username + '</div>' +
                     '<div class="buyerComment">' + i.comment + '</div>' +
@@ -53,4 +54,13 @@ $(document).ready(function() {
         </div> //end stars
     </div> //end commentsContainer
 </div> //end clothing
+
+<div class="panel panel-default">
+  <div class="panel-heading">Panel heading</div>
+  <div class="panel-body">
+    //name
+    //comment
+    //
+  </div>
+</div>
 */
