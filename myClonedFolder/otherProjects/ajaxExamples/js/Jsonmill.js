@@ -13,7 +13,8 @@ $(document).ready(function() {
                 '<div class="panel panel-default">'; //added
                 '<div class="panel-heading">Buyer Reviews</div>'; //added
             $.each(item.comments, function(ind, i) {
-                html += '<div class="buyerName">' + i.username + '</div>' +
+                html += '<div class="panel-body">' + //added
+                    '<div class="buyerName">' + i.username + '</div>' +
                     '<div class="buyerComment">' + i.comment + '</div>' +
                     '<div class="buyerStars">';
 
