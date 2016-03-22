@@ -11,13 +11,22 @@ $(document).ready(function() {
                 '<div class="clothingColor">' + item.color + '</div>' +
                 '<img src="' + item.image + '"/>' +
                 '<div class="commentsContainer">';
-                $.each(item.comments, function(ind, i) {
-                    html+= '<div class="buyerName">' + i.username + '</div>' +
-                           '<div class="buyerComment">' + i.comment + '</div>';
-                }) //each comment
+            $.each(item.comments, function(ind, i) {
+                html += '<div class="buyerName">' + i.username + '</div>' +
+                    '<div class="buyerComment">' + i.comment + '</div>' +
+                    '<div class="buyerStars">';
+                for (var i = 1; i <= 5; i++) {
+                    if (i <= i.stars) {
+                            html+='<img src="lawrencetyleresguerra.github.io/myClonedFolder/images/fullstar.png">';
+                    } else {
+                           html+='<img src="lawrencetyleresguerra.github.io/myClonedFolder/images/emptystar.png">'; 
+                    }
+                }
+                html += '</div>'; //end stars
+            }) //each comment
 
-            html += '</div>'+ //commentsContainer
-                    '</div>'; //col-md-4
+            html += '</div>' + //commentsContainer
+            '</div>'; //col-md-4
 
         }) //each clothing
         $("#clothingData").append(html);
