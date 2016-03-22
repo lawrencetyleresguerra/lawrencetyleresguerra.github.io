@@ -18,11 +18,11 @@ $(document).ready(function() {
                     '<div class="buyerComment">' + i.comment + '</div>' +
                     '<div class="buyerStars">';
 
-                var numStars = Number(i.stars);
+               
 
-                for (var i = 1; i <= 5; i++) {
+                for (var j = 1; j <= 5; j++) {
 
-                    if (i <= numStars) {
+                    if (j <= i.stars) {
                         html += '<img src="http://lawrencetyleresguerra.github.io/myClonedFolder/images/fullstar.png">';
                     } else {
                         html += '<img src="http://lawrencetyleresguerra.github.io/myClonedFolder/images/emptystar.png">';
