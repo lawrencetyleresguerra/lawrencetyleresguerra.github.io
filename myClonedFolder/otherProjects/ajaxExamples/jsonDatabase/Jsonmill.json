@@ -1,0 +1,19 @@
+[
+{
+"type": "Hoodie"
+"name": "199X"
+"color": "Black/Gold"
+"image": "images/hoodie.jpg"
+},
+{
+"type": "T-Shirt"
+"name": "Youth Movement"
+"color": "Red"
+"image": "images/tshirt.jpg"
+},
+{
+"type": "Crewneck"
+"name": "Winter"
+"color": "Light Blue/White"
+"image": "images/crewneck.jpg"
+}]

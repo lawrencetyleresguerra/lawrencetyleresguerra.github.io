@@ -1,5 +1,5 @@
-$(document).read(function(){
-    
-    alert("!")
-    //$.getJSON
+$(document).ready(function(){
+
+alert("!");
+  //$.getJSON
 })
