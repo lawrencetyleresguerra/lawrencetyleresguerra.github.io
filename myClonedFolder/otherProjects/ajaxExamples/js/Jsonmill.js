@@ -9,7 +9,7 @@ $(document).ready(function() {
                 '<div class="clothingType">' + item.type + '</div>' +
                 '<div class="clothingName">' + item.name + '</div>' +
                 '<div class="clothingColor">' + item.color + '</div>' +
-                '<img src=""' + item.image + '/>';
+                '<img src="' + item.image + '"/>';
 
             html += '</div>';
 
