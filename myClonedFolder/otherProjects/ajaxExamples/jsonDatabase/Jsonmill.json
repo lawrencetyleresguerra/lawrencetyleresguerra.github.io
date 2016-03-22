@@ -1,19 +1,55 @@
-[
-{
-"type": "Hoodie"
-"name": "199X"
-"color": "Black/Gold"
-"image": "images/hoodie.jpg"
-},
-{
-"type": "T-Shirt"
-"name": "Youth Movement"
-"color": "Red"
-"image": "images/tshirt.jpg"
-},
-{
-"type": "Crewneck"
-"name": "Winter"
-"color": "Light Blue/White"
-"image": "images/crewneck.jpg"
+[{
+    "type": "Hoodie",
+    "name": "20XX",
+    "color": "Black/Gold",
+    "image": "images/hoodie.jpg",
+    "comments": [{
+        "username": "simplydaphered",
+        "stars": 5,
+        "comment": "Great looking sweater. Would recommend!"
+    }, {
+        "username": "Rob_marcheesy",
+        "stars": 3,
+        "comment": "Pretty warm and comfy."
+    }, {
+        "username": "Wisertree",
+        "stars": 4,
+        "comment": "Dope sweater fam."
+    }]
+}, {
+    "type": "T-Shirt",
+    "name": "Youth Movement",
+    "color": "Red",
+    "image": "images/tshirt.jpg",
+    "comments": [{
+        "username": "Doublelift",
+        "stars": 4,
+        "comment": "Cool design."
+    }, {
+        "username": "aphromoo",
+        "stars": 2,
+        "comment": "Delivery on the item was late. Good product though."
+    }, {
+        "username": "BringerOfRain20",
+        "stars": 3,
+        "comment": "Good for chillin' after practice."
+    }]
+}, {
+    "type": "Crewneck",
+    "name": "Winter's Bite",
+    "color": "Light Blue/White",
+    "image": "images/crewneck.jpg",
+    "comments": [{
+        "username": "KingJames",
+        "stars": 3,
+        "comment": "Warm enough for the Akron winters."
+    }, {
+        "username": "POTUS",
+        "stars": 4,
+        "comment": "If its good enough for the prez, it's good enough for you!"
+    }, {
+        "username": "RobertDowneyJr",
+        "stars": 5,
+        "comment": "Ironman Approves!"
+    }]
 }]
