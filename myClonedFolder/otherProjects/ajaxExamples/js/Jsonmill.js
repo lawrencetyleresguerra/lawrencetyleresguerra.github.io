@@ -17,9 +17,9 @@ $(document).ready(function() {
                     '<div class="buyerStars">';
                 for (var i = 1; i <= 5; i++) {
                     if (i <= i.stars) {
-                            html+='<img src="lawrencetyleresguerra.github.io/myClonedFolder/images/fullstar.png">';
+                            html+='<img src="http://lawrencetyleresguerra.github.io/myClonedFolder/images/fullstar.png">';
                     } else {
-                           html+='<img src="lawrencetyleresguerra.github.io/myClonedFolder/images/emptystar.png">'; 
+                           html+='<img src="http://lawrencetyleresguerra.github.io/myClonedFolder/images/emptystar.png">'; 
                     }
                 }
                 html += '</div>'; //end stars
