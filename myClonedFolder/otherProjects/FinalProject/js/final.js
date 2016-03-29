@@ -5,5 +5,8 @@ $(document).ready(function(){
     $(".nav").find("li").removeClass("active");
     //add active class to clicked li
     $(this).addClass("active");
+    
+    var page = $(this).attr("id");
+    alert(page);
     })
 })
