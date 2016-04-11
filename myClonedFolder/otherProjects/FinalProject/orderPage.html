@@ -9,17 +9,39 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <style type="text/css">
-        .body{
+        .body {
             background-image: url(http://lawrencetyleresguerra.github.io/myClonedFolder/otherProjects/FinalProject/images/toronto.jpg)
-            
         }
-        .jumbotron h1{
+        .jumbotron h1 {
             text-align: center;
         }
-        .jumbotron p{
+        .jumbotron p {
             text-align: center;
         }
     </style>
+    <style>
+		html,
+		body {
+			height: 101%;
+		}
+		
+		body {
+			color: #fffcb4;
+			background-color: black;
+			font-family: "Permanent Marker", sans-serif;
+            text-align: center;
+		}
+		
+		.container {
+			background: black;
+			height: 100%;
+		}
+        
+        #myButton{
+            margin-top: 20px;
+        }
+	</style>
+    
 </head>
 
 <body class="body">
@@ -50,13 +72,79 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-        
-        <!-- end of NAV -->
 
-    <div class="jumbotron">
-        <h1>Welcome to Millenium Clothing.</h1>
-        <p>Order clothes here.</p>
-    </div>
+    <!-- end of NAV -->
+    <div class="row">
+        <div class="bs-example col-md-12">
+
+            <div class="col-md-12">
+
+                <h3>PREORDER THE "Minimal Millenial" BOMBER JACKET</h3>
+                <label class="checkbox-inline">
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="color" id="optionsRadios1" value="Small" checked>Grey & White "OG" $70
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="color" id="optionsRadios2" value="Medium">Red/Blue "UGH" $70.00
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="color" id="optionsRadios3" value="Large">Gold & Black "Royal" Special Edition $80.00
+                        </label>
+                    </div>
+                    <h4>Pre-order</h4>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="extra" value="Pick Up">In-store Pickup
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="extra" value="Delivery">Delivery (+ $10)
+                        </label>
+                    </div>
+                    <div class="checkbox">
+
+                        <select id="mySelect" class="form-control">
+                            <option>Size</option>
+                            <option>Extra Small</option>
+                            <option>Small</option>
+                            <option>Medium</option>
+                            <option>Large</option>
+                            <option>Extra Large</option>
+                        </select>
+                        <div id="mySelectMessage"></div>
+                    </div>
+
+                    <div class="col-md-6 addpad">
+                        <textarea id="myTextArea" class="form-control" rows="5" placeholder="Feedback here!"></textarea>
+                    </div>
+
+                    <div class="col-md-6 addpad">
+
+                        <form class="form-inline">
+                            <div class="form-group">
+                                <label for="exampleInputName2">Address</label>
+                                <input type="text" class="form-control" id="mySingleLineText" placeholder="101 Hotline Court">
+                            </div>
+
+                        </form>
+                    </div>
+
+
+                    <div class="col-md-6">
+                        <button id="myButton" type="button" class="btn btn-default">Place Order</button>
+                    </div>
+                    <div class="col-md-6" id="log"></div>
+            </div>
+        </div>
+        <script src="js/takeAnOrder.js"></script>
+
+
 </body>
 
 </html>
