@@ -2,7 +2,7 @@ $(document).ready(function () {
 		var log = $("#log");
 		//click event
 		//user wants to order
-		$("button").on("click", function () {
+		$("myButton").on("click", function () {
 
 			log.append($("input").val() + "<br/>")
 				.append($("textarea").val() + "<br/>")
@@ -32,7 +32,7 @@ $(document).ready(function () {
 
 		//mouseenter mouseleave envent
 		//changes message on the button text
-		$("button").on("mouseenter", function () {
+		$("myButton").on("mouseenter", function () {
 				log.append("User is hovering on button <br/>");
 				$(this).text("Order Now");
 
