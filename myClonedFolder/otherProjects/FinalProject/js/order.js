@@ -50,10 +50,10 @@ $(document).ready(function () {
 			var selInfo = $("#selectInfo"),
 				choice = $(this).val();
 
-			if (choice == "Galaxy S6") {
-				selInfo.html("Galaxy S6");
-			} else if (choice == "Iphone 6S") {
-				selInfo.html("Iphone 6S");
+			if (choice == "In-store Pickup") {
+				selInfo.html("In-store Pickup");
+			} else if (choice == "Delivery (+$10)") {
+				selInfo.html("Delivery (+$10)");
 			}
 		})
 
