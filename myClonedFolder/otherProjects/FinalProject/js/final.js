@@ -7,6 +7,11 @@ $(document).ready(function() {
         $(this).addClass("active");
 
         var page = $(this).attr("id");
-        alert(page);
-    })
-})
+        getPartial(page);
+    })//click
+    
+function getPartial(partial){
+    alert(partial);
+    
+}
+})//ready
